@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sidebar Dashboard (3) </title>
+<link rel="stylesheet" href="htmldashboard(3).css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+<!--wrapper start-->
+        <div class="wrapper">
+            <!--header menu start-->
+            <div class="header">
+                <div class="header-menu">
+                    <div class="title">Coding <span>Snow</span></div>
+                    <div class="sidebar-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+      <!-- <div class="header-elements"> -->
+<!-- Search bar+ search small bar-->
+<div class="input-button">
+        <form class="form-inline ms-4" style="display:flex;">
+         <input class="form-control mr-sm-2 px-5" type="search" placeholder="Search" aria-label="Search">
+         <button class="btnlink btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+       </form>
+       </div>
+       <!--end search-->
+       <!--dropdown countries-->
+      <div class="bn-container">
+    <button class="btn" id="btn">
+    <img class="usa"src="images/usa.jpg" alt="" height="20" width="30"><span class="English">English</span>
+      <i class="fa fa-sort-desc" id="arrow"></i>
+    </button>
+<div class="dropdown" id="dropdown">
+      <a href="#create">
+        <i class="bx bx-plus-circle"></i>
+        Create New
+      </a>
+      <a href="#draft">
+        <i class="bx bx-book"></i>
+        All Drafts
+      </a>
+      <a href="#move">
+        <i class="bx bx-folder"></i>
+        Move To
+      </a>
+      <a href="#profile">
+        <i class="bx bx-user"></i>
+        Profile Settings
+      </a>
+      <a href="#notification">
+        <i class="bx bx-bell"></i>
+        Notification
+      </a>
+      <a href="#settings">
+        <i class="bx bx-cog"></i>
+        Settings
+      </a>
+    </div>
+  </div>
+<!--dropown flag end-->
+<div class="elements-navbar">
+  <ul>
+                       <li><a class="a1" href="#"><i class="fas fa-database"></i></a></li>
+                       <li><a  class="a1 href="#"><i class="fas fa-cog"></i></a></li>
+                        <li><a class="a3 href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a class="a1 href="#"><i class="fas fa-bell"></i></a></li>
+                          <li><a class="a1 href="#"><i class="fas fa-power-off"></i></a></li>
+                        <a  class="image" href="#"><div class="image-founder"><img class="image-raoul" src="images\sinclair.jpg" alt=""><div class="Ensemble-Name"><span  style="display:inline-block;"><b>Dominic Keller</b></span><span>Founder</span></div></div></a>
+                        </ul>
+</div>
+                    <!-- </div> -->
+                  </div>
+            </div>
+            <!--header menu end-->
+            <!--sidebar start-->
+            <div class="sidebar">
+<div class="profile-logo">
+                    <center class="profile">
+                        <img src="images\photo.jpg" alt="">
+                        <p>Jessica</p>
+                    </center>
+                      </div>
+                      <div class="sidebar-menu">
+                    <!-- <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-desktop"></i><span>Dashboard</span><span class="Dashboard">5</span>
+                        </a>
+                        </li> -->
+                        <li class="item" id="desktop">
+                            <a href="#desktop" class="menu-btn">
+                                  <i class="fas fa-desktop"></i><span>Dashboard <i class="fas fa-chevron-down drop-down"></i></span>
+                            </a>
+                            <div class="sub-menu">
+                                <a href="htmldashboard.html"><span>New</span></a>
+                                <a href="htmldashboard(1).html"><span>Ecommerce</span></a>
+                                <a href="htmldashboard(3).html"><span>Projects</span></a>
+                                <a href="#"><span>CRM</span></a>
+                                <a href="#"><span>E-Wallet</span></a>
+                            </div>
+                        </li>
+                    <span class="apps">APPS</span>
+                    <li class="item" id="calendar">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-calendar3"></i><span class="calendar">Calendar</span>
+                        </a>
+                    </li>
+                    <li class="item"id="chat">
+                      <a href="l1"class="menu-btn">
+                          <i class="bi bi-chat-left-text"></i><span class="chat">Chat</span>
+                        </a>
+                    </li>
+                    <li class="item" id="CRM">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-radar"></i></i><span class="CRM">Chat</span>
+                        </a>
+                    </li>
+                    <li class="item" id="E-commerce">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-chat-left-text"></i><span class="E-Commerce">E-Commerce</span>
+                        </a>
+                    </li>
+                    <li class="item" id="Email">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-envelope-at"></i><span class="Email">Email</span>
+                        </a>
+                    </li>
+                    <li class="item" id="Projects">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-box-seam"></i><span class="Projects">Pojects</span>
+                        </a>
+                    </li>
+                    <li class="item" id="chat">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-chat-left-text"></i><span class="Social Feet">Social Feed</span>
+                        </a>
+                    </li>
+                    <li class="item" id="Tasks">
+                      <a href="l1" class="menu-btn">
+                          <i class="bi bi-broadcast-pin"></i><span class="chat">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="item" id="profile">
+                        <a href="#profile" class="menu-btn">
+<i class="bi bi-file-earmark-lock"></i><span>File Manager</span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+                            <a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="messages">
+                        <a href="#messages" class="menu-btn">
+                              <i class="fas fa-envelope"></i><span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
+                            <a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
+                            <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="settings">
+                        <a href="#settings" class="menu-btn">
+                            <i class="fas fa-cog"></i><span>Settings<i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+                            <a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-info-circle"></i><span>About</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <!--sidebar end-->
+            <!--main container start-->
+            <div class="main-container">
+<div class="card">
+  <div class="grid-container">
+    <div class="item1"style="border-radius:10px;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:20px;">
+  <div class="part1">
+    <ul>
+      <li ><span class="l1">Campaign...</span></li>
+      <li ><span class="l2"><b>9,184</b></span></li>
+      <li > <span class="l3"><i class="	fas fa-walking" ></i><span> 3.27%</span> </span></li>
+    </ul>
+    <div class="part11">
+      <i class="	fas fa-chart-line"></i>
+    </div>
+  </div>
+  </div>
+    <div class="item2"style="border-radius:10px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:40px;"><div class="part1" id="part2">
+        <ul>
+          <li ><span class="l1">Deals</span></li>
+          <li ><span class="l2"><b>3,254</b></span></li>
+          <li > <span class="l3"><i class="	fas fa-walking" ></i><span> 3.27%</span> </span></li>
+        </ul>
+        <div class="part11">
+          <i class="	far fa-chart-bar"></i>
+        </div>
+      </div>
+
+  </div>
+
+    <div class="item3"style="border-radius:10px;display:flex;justify-content:center;align-items:center;gap:20px;"><div class="part1" id="part3">
+        <ul>
+          <li ><span class="l1">New Lea</span></li>
+          <li ><span class="l2"><b>861</b></span></li>
+          <li > <span class="l3"><i class="	fas fa-walking" ></i><span>  4.87%</span> </span></li>
+        </ul>
+        <div class="part11">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+      </div>
+  </div>
+    <div class="item4"style="border-radius:10px;display:flex;justify-content:center;align-items:center;gap:20px;"><div class="part1" id="part4">
+        <ul>
+          <li ><span class="l1">Booked R</span></li>
+          <li ><span class="l2"><b>$253k</b></span></li>
+          <li > <span class="l3"><i class="	fas fa-walking" ></i><span>  11.7%</span> </span></li>
+        </ul>
+        <div class="part11">
+          <i class="	fas fa-chart-area"></i>
+        </div>
+      </div>
+  </div>
+  </div>
+
+</div>
+<div class="card">
+
+  <div class="grid-container ">
+    <div class="item6"style="border-radius:10px; display:flex;flex-direction:column;align-items:center;justify-content:center;"><div class="CAMPAIGNS-ellipsis">
+  <div class="CAMPAIGNS">
+    <span>CAMPAIGNS</span>
+  </div>
+  <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+  </div>
+  <div class="graphic-circle">
+    graphic-circle
+  </div>
+  <div class="bottom-elements">
+  <div class=" font-awesome">
+    <div class="f-a">
+      <i id="arrow" class="	fas fa-location-arrow"></i>
+    </div>
+    <div class="f-a">
+      <i id="envelope"class="far fa-envelope-open"></i>
+    </div>
+    <div class="f-a">
+      <i id="gem"class="	far fa-gem"></i>
+    </div>
+  </div>
+  <!--  start number -->
+  <div class=" font-awesome" id="Number">
+    <div  id="first-number">
+      <span id="">6,510</span>
+    </div>
+    <div  id="second-number">
+      <span id="">6,510</span>
+    </div>
+    <div id="third-number">
+    <span id="">6,510</span>
+    </div>
+  </div>
+  <!--  number end here -->
+  <!-- writin and circle start here -->
+  <div class=" font-awesome" id="Total-Reached-Opened">
+    <div  id="round1">
+      <i id="R1" class="fa fa-certificate"></i><span> Total Sent</span>
+    </div>
+    <div id="round2" >
+      <i id="R2" class="fa fa-certificate"></i><span> Reached</span>
+    </div>
+    <div  id="round3" >
+      <i id="R3" class="fa fa-certificate"></i><span>Opened</span>
+    </div>
+  </div>
+  <!--writin and circle end  here  -->
+  </div>
+  </div>
+  <!--  items7 start here  -->
+  <div class="item7"style="border-radius:10px;">
+    <div class="box-REVENUE">
+  <div class="revenue"><span>REVENUE</span></div>
+  <div class="day-year"><span ><a id="all" href="#">ALL</a></span><span ><a id="M1" href="#">1M</a></span><span ><a id="M6" href="#">6M</a></span><span ><a id="y1" href="#">1Y</a></span></div>
+  </div>
+  <div class="current-previous-month">
+    <div class="current month">
+      <span>Current Month</span>
+      <span>$42,025</span>
+    </div>
+    <div class="previous month">
+      <span>Previous Month</span>
+      <span>$74,651</span>
+    </div>
+  </div>
+
+  <div class=" sinusoidal graphic">
+
+  </div>
+  </div>
+  </div>
+
+</div>
+<div class="card">
+
+    <div class="grid-container mt-3">
+      <div class="item8"><div class=""style="gap:100px;">
+        <div class="CAMPAIGNS-ellipsis" id="TOP PERFORMING-ellipsis">
+      <div class="CAMPAIGNS" id="TOP-PERFORMING">
+        <span>TOP PERFORMING</span>
+      </div>
+      <a href="#" class="link"><i class="fas fa-ellipsis-v"></i></a>
+      </div>
+      <div class="user-leads-deal">
+        <div class="user-leads">
+    <div class="user">
+      <span><b>User</b></span>
+    </div>
+    <div class="leads-deal">
+      <span><b>Leads</b></span>
+      <span><b>Deals</b></span>
+      <span><b>Tasks</b></span>
+    </div>
+  </div>
+  <div class="first-row">
+    <div class="ul1">
+  <ul>
+    <li>Jeremy Young</li>
+    <li class="senior">Senior Sales Executive</li>
+  </ul>
+    </div>
+    <div class="ul2">
+      <ul class="ul2">
+        <li>187</li>
+        <li>154</li>
+        <li>77</li>
+        <li><i class="fa fa-eye"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="first-row" id="second-row">
+    <div class="ul1" id="ul3">
+  <ul>
+    <li>Thomas Krueger</li>
+    <li class="senior">Senior Sales Executive</li>
+  </ul>
+    </div>
+    <div class="ul2">
+      <ul class="ul2" id="ul4">
+        <li>187</li>
+        <li>154</li>
+        <li>77</li>
+        <li><i class="fa fa-eye"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="first-row">
+    <div class="ul1">
+  <ul>
+    <li>Pete Burdine</li>
+    <li class="senior">Senior Sales Executive</li>
+  </ul>
+    </div>
+    <div class="ul2">
+      <ul class="ul2">
+        <li>187</li>
+        <li>154</li>
+        <li>77</li>
+        <li><i class="fa fa-eye"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="first-row" id="four-row">
+    <div class="ul1">
+  <ul>
+    <li>Mary Nelson</li>
+    <li class="senior">Senior Sales Executive</li>
+  </ul>
+    </div>
+    <div class="ul2">
+      <ul class="ul2">
+        <li>187</li>
+        <li>154</li>
+        <li>77</li>
+        <li><i class="fa fa-eye"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="first-row">
+    <div class="ul1">
+  <ul>
+    <li>Mary Nelson</li>
+    <li class="senior">Senior Sales Executive</li>
+  </ul>
+    </div>
+    <div class="ul2">
+      <ul class="ul2">
+        <li>187</li>
+        <li>154</li>
+        <li>77</li>
+        <li><i class="fa fa-eye"></i></li>
+      </ul>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="item9" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+    <div class="CAMPAIGNS-ellipsis" id="TOP PERFORMING-ellipsis">
+    <div class="CAMPAIGNS" id="TOP-PERFORMING">
+    <span>TOP PERFORMING</span>
+    </div>
+    <a href="#" class="link"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\avatar-1.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Risa Pearson</b></li>
+          <li>richard.john@mail.com</li>
+        </ul>
+      </div>
+      <div class="col3"><span>cold lead</span></div>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\avatar-6.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Risa Pearson</b></li>
+          <li>richard.john@mail.com</li>
+        </ul>
+      </div>
+      <div class="col3"> <span>cold lead</span></div>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\avatar-5.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Risa Pearson</b></li>
+          <li>richard.john@mail.com</li>
+        </ul>
+      </div>
+      <div class="col3"> <span>cold lead</span></div>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\avatar-4.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Risa Pearson</b></li>
+          <li>richard.john@mail.com</li>
+        </ul>
+      </div>
+      <div class="col3"><span>cold lead</span></div>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\avatar-3.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Risa Pearson</b></li>
+          <li>richard.john@mail.com</li>
+        </ul>
+      </div>
+      <div class="col3"><span>cold lead</span></div>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\avatar-2.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Risa Pearson</b></li>
+          <li>richard.john@mail.com</li>
+        </ul>
+      </div>
+      <div class="col3"><span>cold lead</span></div>
+    </div>
+    <div class="image-row1">
+      <div class="col1"><img src="images\raoul1.jpg" alt="" height="50px" width="50px"> </div>
+      <div class="col2">
+        <ul>
+          <li><b>Hamey Ndjadzi</b></li>
+                  <li><b>Raoul Sinclair</b></li>
+          <li>hameyraoulsinclair@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col3"><span>cold lead</span></div>
+    </div>
+  </div>
+  <!-- items 10 start here  -->
+  <div class="item10" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <div class="column3">
+     <div class="microphone-information-opendoor" >
+  <div class="microphone-information">
+    <div class="microphone"><i class="fas fa-bullhorn"></i></div>
+    <div class="information">
+      <ul>
+        <li>Enhance</li>
+        <li>your</li>
+        <li>Campaign</li>
+        <li>for better</li>
+        <li>outreach <i class="fas fa-arrow-right"></i> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="opendoor">
+    <i class="fas fa-door-open"></i>
+  </div>
+  </div>
+  <!-- send box white background -->
+  <div class="all-checkbox-TODO">
+    <div class="CAMPAIGNS-ellipsis" id="TODO-checkbox">
+    <div class="CAMPAIGNS" id="todo">
+    <span>TODO</span>
+    </div>
+    <a href="#" class="link"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+  <!-- form start here  -->
+    <form class="form" action="index.html" method="post">
+  <div class="all-checkbox">
+
+  <div class="in">
+    <input type="checkbox" name="" value=""placeholder="checkbox">
+  <label for="checkbox"><div class="ligne" >build an angular appl</div> </label>
+
+  </div>
+  <div class="in">
+    <input type="checkbox" name="" value=""placeholder="checkbox">
+  <label for="checkbox"><div class="l1">Create new version 3.0</div> </label>
+  </div>
+  <div class="in">
+    <input type="checkbox" name="" value=""placeholder="checkbox">
+  <label for="checkbox"><div class="l1">Hehe!! This looks cool!</div> </label>
+  </div>
+  <div class="in">
+    <input type="checkbox" name="" value=""placeholder="checkbox">
+  <label for="checkbox"><div class="ligne">Testing??</div> </label>
+
+  </div>
+  <div class="in">
+  <input type="checkbox" name="" value=""placeholder="checkbox">
+  <label for="checkbox"><div class="ligne">Creating component page</div> </label>
+  </div>
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+                      <div class="card">
+                        <footer>
+                       <div class="last-row" style="display:flex;align-items:center;justify-content:center;gap:500px;">
+                       <div class="col-sm-9">
+                         <ul type="none">
+                           <li>2023 © Hyper - Coderthemes.com</li>
+                         </ul>
+                       </div>
+                       <div class="col-sm-2">
+                         <ul type="none">
+                           <li><a href="#">About</a>&nbsp&nbsp<a href="#">Support</a>&nbsp&nbsp<a href="#">Contact Us</a> </li>
+                         </ul>
+                       </div>
+                       </div>
+                       </footer>
+                         </div>
+                </div>
+
+            <!--main container end-->
+        </div>
+        <!--wrapper end-->
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+
+        </script>
+<script type="text/javascript">
+const dropdownBtn = document.getElementById("btn");
+const dropdownMenu = document.getElementById("dropdown");
+const toggleArrow = document.getElementById("arrow");
+
+// Toggle dropdown function
+const toggleDropdown = function () {
+  dropdownMenu.classList.toggle("show");
+  toggleArrow.classList.toggle("arrow");
+};
+
+// Toggle dropdown open/close when dropdown button is clicked
+dropdownBtn.addEventListener("click", function (e) {
+  e.stopPropagation();
+  toggleDropdown();
+});
+
+// Close dropdown when dom element is clicked
+document.documentElement.addEventListener("click", function () {
+  if (dropdownMenu.classList.contains("show")) {
+    toggleDropdown();
+  }
+});
+</script>
+    </body>
+</html>
